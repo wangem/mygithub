@@ -6,12 +6,12 @@ server:
     uri-encoding: UTF-8
   application:
     name: config-server
-    
+spring:
   cloud:
     config:
       server:
         git:
-          uri=https://github.com/wangem/springCloud-study/tree/master/config-server/src/main/java/com/answern/config/server/test
+          uri: https://github.com/wangem/springCloud-study/tree/master/config-server/src/main/java/com/answern/config/server/test
         username: 674693934@qq.com
         password: wemlive126
 debug: false

@@ -11,7 +11,8 @@ server:
     config:
       server:
         git:
-          uri=
-    
+          uri=https://github.com/wangem/springCloud-study/tree/master/config-server/src/main/java/com/answern/config/server/test
+        username: 674693934@qq.com
+        password: wemlive126
 debug: false
  

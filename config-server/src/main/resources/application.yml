@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  session:
+    timeout: 10
+  tomcat:
+    uri-encoding: UTF-8
+  application:
+    name: config-server
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri=
+    
+debug: false
+ 

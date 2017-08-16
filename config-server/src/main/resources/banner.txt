@@ -1,0 +1,2 @@
+${AnsiColor.BLUE}
+Spring Cloud Server

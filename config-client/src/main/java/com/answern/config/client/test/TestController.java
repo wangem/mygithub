@@ -17,8 +17,11 @@ public class TestController {
 	@Autowired
 	private Environment env;
 	
+	
+	
 	@RequestMapping("/from")
 	public String index() {
+		System.out.println("进入config client =="+this.from);
 		return this.from;
 	}
 	

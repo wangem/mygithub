@@ -1,2 +1,2 @@
 ${AnsiColor.BLUE}
-Spring Cloud Server
+Spring Cloud Config Server

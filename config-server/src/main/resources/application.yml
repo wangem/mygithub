@@ -1,18 +1,22 @@
 server:
-  port: 8080
+  port: 8888
   session:
-    timeout: 10
+    timeout: 100
   tomcat:
     uri-encoding: UTF-8
-  application:
-    name: config-server
+
 spring:
+  application: 
+    name: config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/wangem/springCloud-study/tree/master/config-server/src/main/java/com/answern/config/server/test
-        username: 674693934@qq.com
-        password: wemlive126
+          uri: https://github.com/wangem/springCloud-study
+#          uri: https://github.com/wangem/springCloud-study/tree/config-server/src/main/java/com/answern/config/server/test
+          searchPaths: config-server/src/main/java/com/answern/config/server/test
+          username: 674693934@qq.com
+          password: wemlive126
+          
 debug: false
  

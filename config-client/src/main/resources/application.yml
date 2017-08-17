@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  session:
+    timeout: 100
+  tomcat:
+    uri-encoding: UTF-8
+
+spring: 
+  application: 
+    name: didispace
+  cloud:
+    config:
+      uri: http://localhost:8080
+      profile: test
+      label: master
+          
+debug: false
+
+
+ 

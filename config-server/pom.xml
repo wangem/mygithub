@@ -26,7 +26,11 @@
         <artifactId>spring-cloud-config-server</artifactId>
         <version>${spring-cloud.version}</version>
       </dependency>
-       
+       <dependency>
+<!--        用户认证包 -->
+    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-security</artifactId> 
+	</dependency>
    </dependencies>
    
    

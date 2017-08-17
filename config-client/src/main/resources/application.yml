@@ -7,9 +7,10 @@ server:
 
 spring: 
   application: 
-    name: didispace
+    name: config-client
   cloud:
     config:
+      name: didispace
       uri: http://localhost:8080
       profile: test
       label: master

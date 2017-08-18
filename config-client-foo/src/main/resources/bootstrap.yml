@@ -5,3 +5,7 @@ spring:
       profile: dev
       label: master
       uri: http://localhost:8080
+# 关闭安全验证，否则无法刷新配置文件
+management:
+  security:
+    enabled: false 

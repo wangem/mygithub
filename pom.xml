@@ -53,20 +53,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			 <!-- 以下一组是为了maven编译不编译test代码 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
- 
-<!--     <dependencyManagement> -->
-<!--        <dependencies> -->
-<!--           <dependency> -->
-<!--             <groupId> org.springframework.cloud</groupId> -->
-<!--             <artifactId>spring-cloud-dependencies</artifactId> -->
-<!--             <version>Brixton.Sr5</version> -->
-<!--             <type>pom</type> -->
-<!--             <scope>import</scope> -->
-<!--           </dependency> -->
-<!--        </dependencies> -->
-<!--     </dependencyManagement> -->
 
 	<repositories>
 		<repository>

@@ -1,3 +1,3 @@
-from=foo-test-1.0
-name=didispace
-profiles=prod
+from: foo-test-2.0
+name: foo
+profiles: prod

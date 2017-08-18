@@ -4,6 +4,16 @@ spring:
       server:
         git:
           uri: https://github.com/wangem/springCloud-study
-          searchPaths: config-server/src/main/java/com/answern/config/server/test
           username: 674693934@qq.com
           password: wemlive126
+          clone-on-start: true
+          repos: 
+            foo:
+              uri: https://github.com/wangem/springCloud-study
+              searchPaths: config-server/src/main/java/com/answern/config/server/foo
+            didispace: 
+              uri: https://github.com/wangem/springCloud-study
+              searchPaths: config-server/src/main/java/com/answern/config/server/test
+          
+            
+          

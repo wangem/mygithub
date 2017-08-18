@@ -1,2 +1,12 @@
 ${AnsiColor.BLUE}
-Spring Cloud Config Server
+
+Spring Cloud Config Server：
+
+　　　　　　　\\\|/// 
+　　　　　　\\　.-.-　// 
+.　　　　　　(　.@.@　) 
++-------oOOo-----(_)-----oOOo-------+ 
+|　　　 　　　　　　　　　　　　　　     　  | 
+|　    　启  动  不  要  报  错    ！ ！       　  　 | 
+|　　　　　　　　　　　　　　　　 　　       | 
++---------------------Oooo----------+

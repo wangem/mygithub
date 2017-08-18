@@ -10,7 +10,7 @@
     <modules>
         <module>config-server</module> 
         <module>config-client</module> 
-        <module>config-client-foo</module> 
+        <module>config-client-swiggerUI</module> 
     </modules>
     
 	<parent>

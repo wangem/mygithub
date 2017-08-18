@@ -4,17 +4,10 @@ server:
     timeout: 100
   tomcat:
     uri-encoding: UTF-8
-
 spring: 
   application: 
-    name: config-client
-  cloud:
-    config:
-      name: didispace
-      uri: http://localhost:8080
-      profile: test
-      label: master
-          
+    name: config-client  
+
 debug: false
 
 

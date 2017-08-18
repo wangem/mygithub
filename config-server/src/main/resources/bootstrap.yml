@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangem/springCloud-study
+          searchPaths: config-server/src/main/java/com/answern/config/server/test
+          username: 674693934@qq.com
+          password: wemlive126

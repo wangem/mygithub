@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,9 +20,9 @@ public class TestController {
 	
 	
 	
-	@RequestMapping("/from")
-	public String index() {
-		System.out.println("进入config client =="+this.from);
+	@RequestMapping("/from/{value}")
+	public String index(@PathVariable String value) {
+		System.out.println("进入config client =="+this.from+"=value="+value);
 		return this.from;
 	}
 	

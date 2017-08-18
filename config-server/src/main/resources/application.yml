@@ -1,27 +1,19 @@
 server:
-  port: 8888
+  port: 8080
   session:
     timeout: 100
   tomcat:
     uri-encoding: UTF-8
 # 用户认证设置
-security: 
-  basic:
-    enabled: true
-  user: 
-    name: user
-    password: 111111
+#security: 
+#  basic:
+#    enabled: true
+#  user: 
+#    name: user
+#    password: 111111
 spring:
   application: 
     name: config-server
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/wangem/springCloud-study
-          searchPaths: config-server/src/main/java/com/answern/config/server/test
-          username: 674693934@qq.com
-          password: wemlive126
           
 debug: false
  

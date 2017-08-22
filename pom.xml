@@ -11,6 +11,7 @@
         <module>config-server</module> 
         <module>config-client</module> 
         <module>config-client-swiggerUI</module> 
+        <module>bus-amqp</module> 
     </modules>
     
 	<parent>

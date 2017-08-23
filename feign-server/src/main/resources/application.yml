@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: feign-server
+
+# 注册eureka    
+eureka:
+  client:
+    service-url:
+      springCloudZone: http://localhost:7070/eureka/
+    

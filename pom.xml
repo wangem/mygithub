@@ -13,6 +13,9 @@
         <module>config-client-swiggerUI</module> 
         <module>bus-amqp</module> 
         <module>eureka</module> 
+        <module>feign-server</module> 
+        <module>feign-client</module> 
+        
     </modules>
     
 	<parent>
@@ -94,7 +97,7 @@
 		</plugins>
 	</build>
 
-<!-- 数据源设置 -->
+ 
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>

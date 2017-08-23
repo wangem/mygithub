@@ -1,9 +1,8 @@
-package com.answern.config.client;
+package com.answern;
+
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import com.google.common.base.Predicates;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -41,8 +40,7 @@ public class Swagger2 {
 		return new ApiInfoBuilder() 
 				.title("Spring Boot中使用Swagger2构建RESTful APIs") 
 				.description("这里是一个标题实例关注 https://github.com/wangem/springCloud-study") 
-				.termsOfServiceUrl("sss")  
-				.contact("王二民")
+				.termsOfServiceUrl("sss")   
 				.version("1.0") 
 				.build();
 		}
@@ -52,8 +50,7 @@ public class Swagger2 {
 		return new ApiInfoBuilder() 
 				.title("这里是第二个RESTful APIs") 
 				.description("这里是一个标题实例关注 https://github.com/wangem/springCloud-study") 
-				.termsOfServiceUrl("sss")  
-				.contact("王二民")
+				.termsOfServiceUrl("sss")   
 				.version("1.0") 
 				.build();
 	}

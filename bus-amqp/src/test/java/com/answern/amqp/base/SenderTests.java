@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest 
 public class SenderTests {
 
 	@Autowired
@@ -21,8 +21,8 @@ public class SenderTests {
 	public void sender() {
 		sender.send();
 	}
-	@Test
-	public void receiver() {
-		receiver.process("这是一个消费者");
-	}
+//	@Test
+//	public void receiver() {
+//		receiver.process("这是一个消费者");
+//	}
 }

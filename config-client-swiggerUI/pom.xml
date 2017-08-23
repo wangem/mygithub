@@ -13,7 +13,7 @@
     <name>config-client-swiggerUI</name> 
 
    <properties>
-        <start-class>com.answern.config.client.ConfigClientFooApplication</start-class> 
+        <start-class>com.answern.ConfigClientFooApplication</start-class> 
         
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

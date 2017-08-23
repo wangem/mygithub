@@ -5,15 +5,24 @@ server:
   tomcat:
     uri-encoding: UTF-8
 # 用户认证设置
-#security: 
-#  basic:
-#    enabled: true
-#  user: 
-#    name: user
-#    password: 111111
+security: 
+  basic:
+    enabled: true
+  user: 
+    name: user
+    password: 111111
 spring:
   application: 
     name: config-server
+    
+ 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: rabbimq
+    password: rabbimq 
+    publisher-confirms: true
+    virtual-host: /
           
 debug: false
  

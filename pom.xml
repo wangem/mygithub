@@ -10,6 +10,7 @@
     <modules>
         <module>config-server</module> 
         <module>config-client</module> 
+<!--         <module>config-client-1</module>  -->
         <module>config-client-swiggerUI</module> 
         <module>bus-amqp</module> 
     </modules>
@@ -58,6 +59,8 @@
            <artifactId>springfox-swagger-ui</artifactId>
            <version>${swagger2.version}</version>
         </dependency>
+        
+      
 	</dependencies>
 
 
@@ -67,7 +70,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			 <!-- 以下一组是为了maven编译不编译test代码 -->
+			
+			 <!-- 以下一组是为了maven编译不编译test代码 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -75,9 +79,11 @@
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
+            -->
 		</plugins>
 	</build>
 
+<!-- 数据源设置 -->
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>

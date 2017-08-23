@@ -1,15 +1,14 @@
-package com.answern.amqp;
+package com.answern;
+
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-public class BusAmqpAppliction {
-	
+public class ConfigClientApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(BusAmqpAppliction.class, args);
-	
+		SpringApplication.run(ConfigClientApplication.class, args);
 	}
-	
 }

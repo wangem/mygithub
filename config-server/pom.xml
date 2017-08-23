@@ -13,7 +13,7 @@
     <name>config-server</name> 
 
    <properties>
-        <start-class>com.answern.config.server.ConfigServerApplication</start-class> 
+        <start-class>com.answern.ConfigServerApplication</start-class> 
         
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -29,12 +29,18 @@
         <version>${spring-cloud.version}</version>
       </dependency>
        
-<!--        用户认证包 
+       <!-- bus -->
+       <dependency>
+        <groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+    	<version>1.3.1.RELEASE</version>
+      </dependency> 
+<!--        用户认证包 	-->
     <dependency>
 	    <groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-security</artifactId> 
 	</dependency>
-	-->
+
 	
    </dependencies>
    

@@ -1,6 +1,7 @@
 package com.answern.config.client.foo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +18,7 @@ import io.swagger.annotations.ApiOperation;
 @RestController // 相当于Controller + ResponseBody  不能返回页面解析器
 public class TestController {
 
-//	@Value("${from}")
+	@Value("${from}")
 	private String from;
 	
 	@Autowired

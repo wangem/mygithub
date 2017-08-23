@@ -1,2 +1,10 @@
 ${AnsiColor.BLUE}
-Spring Cloud Config Client
+
+　　　　　　　\\\|/// 
+　　　　　　\\　.-.-　// 
+.　　　　　　(　.@.@　) 
++-------oOOo-----(_)-----oOOo-------+ 
+|　　　 　　　　　　　　　　　　　　     　  | 
+|　    Spring Cloud Config Client　        | 
+|　　　　　　　　　　　　　　　　 　　       | 
++---------------------Oooo----------+

@@ -7,6 +7,6 @@ Spring Cloud Config Server：
 .　　　　　　(　.@.@　) 
 +-------oOOo-----(_)-----oOOo-------+ 
 |　　　 　　　　　　　　　　　　　　     　  | 
-|　    　启  动  不  要  报  错    ！ ！       　  　 | 
+|　Spring Cloud Config Server 　     | 
 |　　　　　　　　　　　　　　　　 　　       | 
 +---------------------Oooo----------+

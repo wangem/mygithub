@@ -13,6 +13,7 @@
         <module>config-client-swiggerUI</module> 
         <module>bus-amqp</module> 
         <module>eureka</module> 
+<!--         <module>eureka-1</module>  -->
         <module>feign-server</module> 
         <module>feign-client</module> 
         
@@ -64,6 +65,11 @@
            <version>${swagger2.version}</version>
         </dependency>
         
+        <dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
       
 	</dependencies>
 

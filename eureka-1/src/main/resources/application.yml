@@ -1,0 +1,16 @@
+server:
+  port: 7070
+
+  session:
+    timeout: 100
+  tomcat:
+    uri-encoding: UTF-8
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false   # 关闭eureka客户端登记
+    fetch-registry: false         # 关闭检查服务
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

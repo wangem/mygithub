@@ -1,17 +1,15 @@
 server:
-  port: 8080
+  port: 8081
   
 spring:
   application:
-    name: feign-server
+    name: feign-client
 #控制台彩色输出
   output:
     ansi:
-      enabled: always
-
+      enabled: detect
 # 注册eureka    
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7070/eureka/
-    

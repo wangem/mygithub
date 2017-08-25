@@ -1,0 +1,12 @@
+${AnsiColor.BLUE}
+
+Spring Cloud Feign Client：
+
+　　　　　　　\\\|/// 
+　　　　　　\\　.-.-　// 
+.　　　　　　(　.@.@　) 
++-------oOOo-----(_)-----oOOo-------+ 
+|　　　 　　　　　　　　　　　　　　     　  | 
+|　Spring Cloud Feign Client  　     | 
+|　　　　　　　　　　　　　　　　 　　       | 
++---------------------Oooo----------+

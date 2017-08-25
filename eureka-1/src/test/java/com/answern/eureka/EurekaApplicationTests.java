@@ -1,4 +1,4 @@
-package com.answern.feign;
+package com.answern.eureka;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class FeignApplicationTests {
+public class EurekaApplicationTests {
 
 	@Test
 	public void contextLoads() {

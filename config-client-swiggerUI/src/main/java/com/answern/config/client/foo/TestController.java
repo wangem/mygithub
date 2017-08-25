@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiOperation;
 @RestController // 相当于Controller + ResponseBody  不能返回页面解析器
 public class TestController {
 
-	@Value("${from}")
+//	@Value("${from}")
 	private String from;
 	
 	@Autowired

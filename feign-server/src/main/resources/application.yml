@@ -8,10 +8,16 @@ spring:
   output:
     ansi:
       enabled: always
+      
+    
 
 # 注册eureka    
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7070/eureka/
+      
+logging:
+  level:
+    com.answern.feign: DEBUG
     

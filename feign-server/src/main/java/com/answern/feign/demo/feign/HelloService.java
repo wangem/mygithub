@@ -11,7 +11,7 @@ import com.answern.feign.demo.model.User;
 
 
 
-@FeignClient("feign-client")
+@FeignClient( name ="feign-client",configuration)
 public interface HelloService {
 	
 	@RequestMapping("hello")

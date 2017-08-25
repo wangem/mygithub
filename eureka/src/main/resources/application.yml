@@ -9,6 +9,7 @@ spring:
   output:
     ansi:
       enabled: detect
+---
 eureka:
   instance:
     hostname: localhost
@@ -17,3 +18,4 @@ eureka:
     fetch-registry: false         # 关闭检查服务
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      

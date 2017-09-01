@@ -11,7 +11,7 @@ import com.answern.feign.demo.model.User;
 
 
 
-@FeignClient( name ="feign-client",configuration)
+@FeignClient( name ="feign-client" ,fallback=HelloServiceFallBack.class)
 public interface HelloService {
 	
 	@RequestMapping("hello")

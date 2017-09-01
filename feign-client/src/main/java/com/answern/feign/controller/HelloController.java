@@ -1,5 +1,8 @@
 package com.answern.feign.controller;
 
+import java.util.Date;
+import java.util.Random;
+
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +17,18 @@ public class HelloController {
 	
 	@RequestMapping(value = "hello" , method=RequestMethod.GET)
 	public String  helloConsumer() {
-		
-		return "这里是feign-client的hello返回";
+		System.out.println("进入hello");
+		long sttime = new Date().getTime();
+		int nextInt = new Random().nextInt(8000);
+		try {
+			Thread.sleep(nextInt);
+		} catch (InterruptedException e) {
+			 
+			e.printStackTrace();
+		}
+		long entime = new Date().getTime();
+		System.out.println("沉睡了:"+ ( nextInt/1000 )+"秒");
+		return "这里是feign-client的hello返回:"+ (entime -sttime  );
 
 	}
 	@RequestMapping(value = "hello1" , method=RequestMethod.GET)

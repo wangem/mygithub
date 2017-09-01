@@ -35,13 +35,22 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		
-		<!-- 测试原生feign使用 -->
+		<!-- 测试原生feign使用
 		<dependency>
 		    <groupId>com.netflix.feign</groupId>
 		    <artifactId>feign-gson</artifactId>
 		    <version>8.18.0</version>
 		</dependency>
-		 
+		  -->
+		  
+<!-- 		  <dependency> -->
+<!-- 			<groupId>org.springframework.cloud</groupId> -->
+<!-- 			<artifactId>spring-cloud-starter-ribbon</artifactId> -->
+<!-- 		</dependency> -->
+		  <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId> 
+		</dependency>
 	</dependencies>
 
 	 

@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.answern.feign.demo.config.ReadConfig;
 import com.answern.feign.demo.feign.HelloService;
 import com.answern.feign.demo.model.User;
 
@@ -13,12 +14,20 @@ public class ConsumerController {
 
 	@Autowired
 	HelloService helloService;
+	@Autowired
+	ReadConfig readConfig;
 	
 	@RequestMapping(value = "feign-consumer" , method=RequestMethod.GET)
 	public String  helloConsumer() {
 		
 		return helloService.hello();
 
+	}
+	@RequestMapping(value = "readConfig" , method=RequestMethod.GET)
+	public String  readConfig() {
+		System.out.println("readConfig.getMsg() = "+readConfig.getMsg());
+		return readConfig.getMsg();
+		
 	}
 	@RequestMapping(value = "feign-hello" , method=RequestMethod.GET)
 	public String  hello() {

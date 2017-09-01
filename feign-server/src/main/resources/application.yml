@@ -1,23 +1,71 @@
 server:
   port: 8080
-  
+  tomcat:
+    uri-encoding: UTF-8
+    compression: on   # 开启tomcat压缩  不知道是不是起作用
+    accept-count: 500 # 最大连接数
+    max-threads:  300 # 最大线程数
+ 
+  context-path: /config 
+    
 spring:
   application:
     name: feign-server
+  config:  
+    location: config
+  profiles:    # 引入application-cc.yml配置文件
+    include: cc2
+    active: cc
+
 #控制台彩色输出
   output:
     ansi:
       enabled: always
-      
-    
+     
+
+  
+# 是否开启feign.hystrix功能
+feign:
+  hystrix:
+    enabled: true
+# 开启请求压缩功能
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+        
+# 一般只用hystrix的服务降级功能 fallback
+hystrix:
+  command:
+    default:   # 这个参数是commandKey  是接口中的方法名称
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisseconds: 5000
+
+#Ribbon全局配置
+ribbon:
+  ConnetTimeout: 500
+  ReadTimeout: 2000
+# 按照 feign Client配置
+feign-client: 
+  ribbon:
+    listOfServers: localhost:8082  # 如果不用eureka 就这是客户端的list来提供feign使用
+    ConnetTimeout: 500
+    ReadTimeout: 2000
+    OkToRetryOnAllOperations: true# 设置重试操作为true
+    MaxAutoRetriesNextServer: 1   # 尝试更换2次
+    MaxAutoRetries: 1            # 访问首选实例1次
 
 # 注册eureka    
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7070/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:7070/eureka/
       
 logging:
   level:
     com.answern.feign: DEBUG
+  
     

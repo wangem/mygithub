@@ -1,10 +1,5 @@
 package com.answern.feign.demo.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-
-
 public class User {
 //	@Getter
 //	@Setter

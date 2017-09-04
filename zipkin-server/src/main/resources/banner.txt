@@ -1,0 +1,12 @@
+${AnsiColor.BLUE}
+
+Spring Cloud Zipkin Server ：
+
+　　　　　　　\\\|/// 
+　　　　　　\\　.-.-　// 
+.　　　　　　(　.@.@　) 
++-------oOOo-----(_)-----oOOo-------+ 
+|　　　 　　　　　　　　　　　　　　     　  | 
+|　Zipkin Server  started     　     | 
+|　　　　　　　　　　　　　　　　 　　       | 
++---------------------Oooo----------+

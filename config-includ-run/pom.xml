@@ -3,12 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
          
-    <groupId>config-includ-run</groupId>
-    <artifactId>spring-boot-answern-config</artifactId>
+    <groupId>com.answern</groupId>
+    <artifactId>config-includ-run</artifactId>
     <version>1.0.0.RELEASE</version>
     <modelVersion>4.0.0</modelVersion>
      
-    <name>spring-boot-answern-config</name> 
+    <name>config-includ-run</name> 
     
      <parent>
         <groupId>org.sonatype.oss</groupId>

@@ -54,7 +54,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         
-        <!-- swagger2 
+        <!-- swagger2   原生
         <dependency>
            <groupId>io.springfox</groupId>
            <artifactId>springfox-swagger2</artifactId>
@@ -66,6 +66,7 @@
            <version>${swagger2.version}</version>
         </dependency>
         -->
+        <!-- swagger2  didispace封装-->
 		 <dependency>
 			<groupId>com.didispace</groupId>
 			<artifactId>spring-boot-starter-swagger</artifactId>
@@ -78,6 +79,12 @@
 			<optional>true</optional>
 		</dependency>
       
+      
+         <!--sleuth 探针。 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+        </dependency>
 	</dependencies>
 
    <dependencyManagement>

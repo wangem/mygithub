@@ -26,10 +26,21 @@
 	</properties>
     
    <dependencies>
+           <!--  单独加载zipkin时使用 -->
+<!--        <dependency> -->
+<!--             <groupId>io.zipkin.java</groupId> -->
+<!--             <artifactId>zipkin-server</artifactId>  -->
+<!--         </dependency>  -->
+       <!--  增加MQ zipkin时使用 -->
        <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-server</artifactId> 
-        </dependency> 
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
+       </dependency>
+<!--         在父包中已经引入 -->
+<!--        <dependency> -->
+<!--             <groupId>org.springframework.cloud</groupId> -->
+<!--             <artifactId>spring-cloud-starter-stream-rabbit</artifactId> -->
+<!--        </dependency> -->
        <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin-autoconfigure-ui</artifactId> 

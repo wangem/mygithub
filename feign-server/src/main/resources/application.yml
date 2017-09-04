@@ -5,13 +5,7 @@ server:
     compression: on   # 开启tomcat压缩  不知道是不是起作用
     accept-count: 500 # 最大连接数
     max-threads:  300 # 最大线程数
- 
-  context-path: /config 
-  
-# 
-#owner:
-#  title: uyty
-
+#  context-path: /config  增加项目名称为config
     
 spring:
   application:
@@ -19,20 +13,25 @@ spring:
   config:  
     location: config
   profiles:    # 引入application-cc.yml配置文件
-    include: cc2
-    active: banner,logging
+    include: cc
+    active: banner,logging,rabbitmq
   main:
-    
     web-environment: true
-  mvc:
-    view:
-      prefix: views/   #classpath:
-      suffix: .jsp
-
+ 
 #控制台彩色输出
   output:
     ansi:
       enabled: always
+  zipkin:
+    base-url: http://localhost:9411
+     
+    locator:
+      discovery:
+        enabled: true
+  sleuth:
+    sampler:
+      percentage: 1.0
+
      
 
   
@@ -54,27 +53,31 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMillisseconds: 5000
+            timeoutInMillisseconds: 50000
 
 #Ribbon全局配置
 ribbon:
-  ConnetTimeout: 500
-  ReadTimeout: 2000
+  ConnetTimeout: 5000
+  ReadTimeout: 3000
+#  OkToRetryOnAllOperations: true # 设置重试操作为true
+  MaxAutoRetriesNextServer: 1   # 尝试更换2次
+  MaxAutoRetries: 1            # 访问首选实例1次 
+  
 # 按照 feign Client配置
-feign-client: 
-  ribbon:
-    listOfServers: localhost:8082  # 如果不用eureka 就这是客户端的list来提供feign使用
-    ConnetTimeout: 500
-    ReadTimeout: 2000
-    OkToRetryOnAllOperations: true# 设置重试操作为true
-    MaxAutoRetriesNextServer: 1   # 尝试更换2次
-    MaxAutoRetries: 1            # 访问首选实例1次
+#feign-client: 
+#  ribbon:
+#    #listOfServers: localhost:8082,localhost:8081  # 如果不用eureka 就这是客户端的list来提供feign使用
+#    ConnetTimeout: 5000
+#    ReadTimeout: 5000
+#    OkToRetryOnAllOperations: true# 设置重试操作为true
+#    MaxAutoRetriesNextServer: 1   # 尝试更换2次
+#    MaxAutoRetries: 1            # 访问首选实例1次
 
 # 注册eureka    
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:7070/eureka/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7070/eureka/
       
 
   

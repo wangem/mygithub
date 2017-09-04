@@ -19,7 +19,7 @@ public class HelloController {
 	public String  helloConsumer() {
 		System.out.println("进入hello");
 		long sttime = new Date().getTime();
-		int nextInt = new Random().nextInt(8000);
+		int nextInt = new Random().nextInt(3000);
 		try {
 			Thread.sleep(nextInt);
 		} catch (InterruptedException e) {

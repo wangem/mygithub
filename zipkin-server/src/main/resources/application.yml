@@ -4,3 +4,16 @@ server:
 spring:
   application:
     name: zipkin-server
+  config:
+    location: config
+  profiles:
+    active: banner,rabbitmq
+  zipkin:
+    locator:
+      discovery:
+        enabled: false
+# 注册eureka    
+eureka: 
+  client:
+    service-url:
+      defaultZone: http://localhost:7070/eureka/

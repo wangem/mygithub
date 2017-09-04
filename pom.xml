@@ -13,7 +13,7 @@
         <module>config-client-swiggerUI</module> 
         <module>bus-amqp</module> 
         <module>eureka</module> 
-<!--         <module>eureka-1</module>  -->
+        <module>config-includ-run</module> 
         <module>feign-server</module> 
         <module>feign-client</module> 
         

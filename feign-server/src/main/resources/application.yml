@@ -7,6 +7,11 @@ server:
     max-threads:  300 # 最大线程数
  
   context-path: /config 
+  
+# 
+#owner:
+#  title: uyty
+
     
 spring:
   application:
@@ -15,7 +20,14 @@ spring:
     location: config
   profiles:    # 引入application-cc.yml配置文件
     include: cc2
-    active: cc
+    active: banner
+  main:
+    sources:
+    web-environment: true
+  mvc:
+    view:
+      prefix: views/   #classpath:
+      suffix: .jsp
 
 #控制台彩色输出
   output:

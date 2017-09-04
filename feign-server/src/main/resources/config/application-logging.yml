@@ -1,0 +1,7 @@
+logging:
+  level: 
+    com.answern.feign: DEBUG
+  path: logs             # 感觉这个东西不起作用
+  file: logs/feign-server.log
+  
+ 

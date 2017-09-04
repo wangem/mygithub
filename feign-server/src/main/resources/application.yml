@@ -20,9 +20,9 @@ spring:
     location: config
   profiles:    # 引入application-cc.yml配置文件
     include: cc2
-    active: banner
+    active: banner,logging
   main:
-    sources:
+    
     web-environment: true
   mvc:
     view:
@@ -76,8 +76,6 @@ feign-client:
 #    service-url:
 #      defaultZone: http://localhost:7070/eureka/
       
-logging:
-  level:
-    com.answern.feign: DEBUG
+
   
     

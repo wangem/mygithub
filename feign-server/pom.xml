@@ -54,6 +54,23 @@
 <!-- 		    <artifactId>spring-boot-answern-config</artifactId> -->
 <!-- 		    <version>1.0.0.RELEASE</version> -->
 <!-- 		</dependency> -->
+
+		 <!--sleuth 探针。 单独探针
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+         -->
+         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+         <!--sleuth 加入mq的探针-->
+         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-stream</artifactId>
+         </dependency>
+         
 		
 	</dependencies>
 

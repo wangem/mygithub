@@ -4,8 +4,8 @@ spring:
       server:
         git:
           uri: https://github.com/wangem/springCloud-study
-          username: 674693934@qq.com
-          password: wemlive126
+          username:  
+          password:  
           clone-on-start: true
           repos: 
             foo:

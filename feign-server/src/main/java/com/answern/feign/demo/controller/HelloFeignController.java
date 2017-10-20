@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.answern.feign.demo.feign.HelloFeign;
+import com.answern.feign.demo.feign.HelloFeignException;
 
 @RestController
 @RequestMapping("hello" )
@@ -13,6 +14,8 @@ public class HelloFeignController {
 
 	@Autowired
 	HelloFeign helloFeign;
+	@Autowired
+	HelloFeignException helloFeignException;
 	
 	
 	@RequestMapping(value = "index" , method=RequestMethod.GET)
@@ -20,6 +23,12 @@ public class HelloFeignController {
 		
 		return helloFeign.hello();
 
+	}
+	@RequestMapping(value = "exception" , method=RequestMethod.GET)
+	public String  helloFeignException() {
+		
+		return helloFeignException.helloexception();
+		
 	}
 
 }

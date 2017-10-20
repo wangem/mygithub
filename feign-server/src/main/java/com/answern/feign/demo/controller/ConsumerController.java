@@ -1,12 +1,10 @@
 package com.answern.feign.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.answern.feign.demo.config.ReadConfig;
 import com.answern.feign.demo.feign.HelloService;
 import com.answern.feign.demo.model.User;
 
@@ -15,8 +13,7 @@ public class ConsumerController {
 
 	@Autowired
 	HelloService helloService;
-	@Autowired
-	ReadConfig readConfig;
+	
 	
  
 

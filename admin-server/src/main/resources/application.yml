@@ -1,0 +1,88 @@
+server:
+  port: 8070
+  session:
+    timeout: 100
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: admin-server
+  output:
+    ansi:
+      enabled: detect
+#  mail:
+#    host:  smtp.exmail.qq.com  
+#    protocol: smtp  
+#    username: wangermin@95303.com
+#    password: LSpwd123
+#    properties: 
+#      mail:
+#        smtp:
+#          auth: true  
+#        starttls:
+#          enable: true  
+#          required: true
+  jackson: 
+    serialization:
+      indent-output:  true
+  boot:
+    admin:
+      auto-deregistration: true
+      auto-registration: false
+      
+      url: http://localhost:${server.port}
+      client:
+        enabled: true
+        prefer-ip: true # 解决windows下运行时无法识别主机名的问题  
+      register-once: false 
+      
+#      notify:
+#        mail:
+#          from: wangermin@95303.com
+#          to:   ligang@95303.com
+#          cc: ruanjinping@95303.com
+#        hipchat:
+#          enabled: true
+          
+
+endpoints: 
+  health: 
+    enabled:  true 
+    sensitive: false
+  shutdown:
+    enabled: true
+    sensitive: true  #开启shutdown的安全验证
+  #验证用户名
+security:
+  user:
+    name: admin-server
+    password: admin-server-password
+
+    
+management: 
+  security:
+    enabled: false
+    roles: SUPERUSER #角色
+
+ 
+eureka: 
+  client:
+    service-url: 
+      defaultZone : http://10.0.0.171:7070/eureka,http://10.0.0.227:7070/eureka,http://10.0.0.173:7070/eureka
+# 
+
+logging:
+  path: logs 
+  file: ${logging.path}/admin.log
+  
+info:  #定义各种额外的详情给服务端显示  
+  app:
+    name: wem
+    version: 1.0.0 
+  build:
+    name: "@project.name@" #从pom.xml中获取  
+    description: "@project.description@"  
+    artifactId: "@project.artifactId@"
+    version:  "@project.version@"
+    spring-boot-version: "@project.parent.version@"  
+    

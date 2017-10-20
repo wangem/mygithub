@@ -1,12 +1,17 @@
+# 这是公共配置
+spring: 
+  profiles:
+    include: banner,logging #,rabbitmq,public 
+    active: pee2  # 启动不同的配置 下面配置了两个 pee1 和pee2
+---
+# 8081配置
 server:
   port: 8081
 spring: 
-  profiles:
-    active: banner,logging,rabbitmq,public
+  profiles: pee1 
 ---
 server:
   port: 8082
 spring: 
-  profiles:
-    active: banner,logging,rabbitmq,public
+  profiles: pee2
   

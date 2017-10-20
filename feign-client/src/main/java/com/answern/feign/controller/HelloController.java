@@ -46,5 +46,9 @@ public class HelloController {
 		
 		return "Hello "+ user.getName()+", "+ user.getAge();
 	}
+	@RequestMapping(value = "helloexception" , method=RequestMethod.GET)
+	public String   helloexception() throws Exception { 
+			throw new Exception("this is a exception");
+	}
 
 }

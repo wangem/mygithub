@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.answern.feign.demo.model.User;
 
-@FeignClient(name="hellotest",url="http://localhost:8081/")
+@FeignClient(name="hellotest",url="http://localhost:8081/" )
 public interface HelloFeign {
 	@RequestMapping("hello")
 	String hello();

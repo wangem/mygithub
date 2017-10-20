@@ -1,12 +1,13 @@
 server:
-  port: 8080
+  #port: 8080
   tomcat:
     uri-encoding: UTF-8
     compression: on   # 开启tomcat压缩  不知道是不是起作用
     accept-count: 500 # 最大连接数
     max-threads:  300 # 最大线程数
+
 #  context-path: /config  增加项目名称为config
-    
+
 spring:
   application:
     name: feign-server
@@ -14,7 +15,8 @@ spring:
     location: config
   profiles:    # 引入application-cc.yml配置文件
     include: cc
-    active: banner,logging,rabbitmq
+    active: banner,logging 
+    #,rabbitmq
   main:
     web-environment: true
  
@@ -22,13 +24,13 @@ spring:
   output:
     ansi:
       enabled: always
-  zipkin:
-    service:
-      name: zipkin-server
+#  zipkin:
+#    service:
+#      name: zipkin-server
 #    base-url: http://localhost:9411
-    locator:
-      discovery:
-        enabled: true
+#    locator:
+#      discovery:
+#        enabled: true
   sleuth:
     sampler:
       percentage: 1.0
@@ -81,5 +83,6 @@ feign-client:
 #      defaultZone: http://localhost:7070/eureka/
 #      
 
-  
+hello:
+  msg: 287
     

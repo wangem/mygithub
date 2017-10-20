@@ -18,9 +18,13 @@ eureka:
   instance:
     hostname: localhost
   client:
+    region: region
+    availability-zones:
+      zones: ownzones
     register-with-eureka: false   # 关闭eureka客户端登记
     fetch-registry: false         # 关闭检查服务
     service-url:
+      ownzones : http://${eureka.instance.hostname}:${server.port}/eureka
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
       
       

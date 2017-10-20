@@ -1,0 +1,12 @@
+${AnsiColor.BLUE}
+
+Spring Cloud  Admin Server :
+
+　　　　　　　\\\|/// 
+　　　　　　\\　.-.-　// 
+.　　　　　　(　.@.@　) 
++-------oOOo-----(_)-----oOOo-------+ 
+|　　　 　　　　　　　　　　　　　　     | 
+|　Spring Cloud Admin Server 　     | 
+|　　　　　　　　　　　　　　　　 　　  | 
++---------------------Oooo----------+

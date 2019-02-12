@@ -12,9 +12,7 @@ spring:
       enabled: detect
 #  mail:
 #    host:  smtp.exmail.qq.com  
-#    protocol: smtp  
-#    username: wangermin@95303.com
-#    password: LSpwd123
+#    protocol: smtp 
 #    properties: 
 #      mail:
 #        smtp:
@@ -38,9 +36,6 @@ spring:
       
 #      notify:
 #        mail:
-#          from: wangermin@95303.com
-#          to:   ligang@95303.com
-#          cc: ruanjinping@95303.com
 #        hipchat:
 #          enabled: true
           
